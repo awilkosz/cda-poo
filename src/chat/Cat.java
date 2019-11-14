@@ -3,8 +3,9 @@ package chat;
 public class Cat {
 	String color;
 	String name;
-	
-	
+	int energy;
+	boolean happy;
+	boolean feed;
 	
 	/**
 	 * Constructeur sans paramètre
@@ -24,6 +25,9 @@ public class Cat {
 		System.out.println("Naissance d'un nouveau chat");
 		this.name = pName;
 		this.color = pColor;
+		this.energy = 50;
+		this.happy = false;
+		this.feed = false;
 	}
 	
 	/**
@@ -46,6 +50,7 @@ public class Cat {
 	 */
 	public void eat(String food) {
 		System.out.println(this.name + " mange " + food);
+		this.feed = true;
 	}
 	
 	/**
@@ -56,10 +61,12 @@ public class Cat {
 		System.out.println(this.name + " part à la chasse ");
 		String[] chasse = {"souris", "oiseau", "chaussette"};
 		int n = (int)(Math.random() * 3);
+		this.happy = true;
 		return chasse[n];
 	} 
 	
 	public void sleep() {
 		System.out.println(this.name + " dort");
+		this.energy += 50;
 	}
 }
