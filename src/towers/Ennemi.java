@@ -1,5 +1,7 @@
 package towers;
 
+import java.util.Scanner;
+
 public class Ennemi {
 	float posX;
 	float posY;
@@ -49,4 +51,14 @@ public class Ennemi {
 			vivant = true;
 		return vivant;
 	}
+	
+	public static Ennemi creerEnnemi(){
+        Scanner saisie = new Scanner(System.in);
+        System.out.println(" Saisir les pv PV ?");
+        int pv = saisie.nextInt();
+        System.out.println(" Saisir la vitesse ?");
+        int rapidite = saisie.nextInt();
+        Ennemi monEnnemi = new Ennemi(pv, rapidite);
+        return monEnnemi;
+    }
 }

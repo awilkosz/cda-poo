@@ -29,10 +29,8 @@ public class Terrain {
 		
 		System.out.println(Ennemi.compteur);
 		
-		public static void creerEnnemi()
-		{
-			
-		}
+		Ennemi monEnnemi = Ennemi.creerEnnemi();
+        System.out.println("Pv de mon nouvel Ennemi : "+monEnnemi.pv);
 	}
 
 }
