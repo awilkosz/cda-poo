@@ -59,6 +59,7 @@ public class Ennemi {
         System.out.println(" Saisir la vitesse ?");
         int rapidite = saisie.nextInt();
         Ennemi monEnnemi = new Ennemi(pv, rapidite);
+        saisie.close();
         return monEnnemi;
     }
 }
