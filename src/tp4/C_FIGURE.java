@@ -1,6 +1,6 @@
-package tp3;
+package tp4;
 
-public class C_FIGURE {
+abstract class C_FIGURE {
 	 double x;
 	 double y;
 	
@@ -19,4 +19,6 @@ public class C_FIGURE {
 	{
 		return this.Aire();
 	}
+	
+	abstract protected void dessine();
 }
