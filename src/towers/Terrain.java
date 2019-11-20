@@ -18,14 +18,14 @@ public class Terrain {
 		
 		Ennemi grosMechant = new Ennemi(100,2);
 		Ennemi unAutreEnnemi = new Ennemi(50,4);
-		grosMechant.toString();
-		unAutreEnnemi.toString();
+		System.out.println(grosMechant);
+		System.out.println(unAutreEnnemi);
 		grosMechant.seDeplace(5, 8);
-		grosMechant.toString();
+		System.out.println(grosMechant);
 		grosMechant.recevoirDegats(50);
 		unAutreEnnemi.recevoirDegats(10);
-		grosMechant.toString();
-		unAutreEnnemi.toString();
+		System.out.println(grosMechant);
+		System.out.println(unAutreEnnemi);
 		
 		System.out.println(Ennemi.compteur);
 		
