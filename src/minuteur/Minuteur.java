@@ -14,6 +14,11 @@ public class Minuteur {
 		return minute;
 	}
 	
+	public void setMinute(int minute) 
+	{
+		this.minute = minute;
+	}
+	
 	public void tic() 
 	{ 
 		if (this.minute == 59 ) 
