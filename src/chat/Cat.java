@@ -41,7 +41,8 @@ public class Cat {
 	 * méthode qui permet d'écouter le chat
 	 */
 	public void listen() {
-		System.out.println("Miaouuuuuu");
+		if(!this.feed)
+			System.out.println("Miaouuuuuu");
 	}
 	
 	/**
