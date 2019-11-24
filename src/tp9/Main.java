@@ -12,17 +12,17 @@ public class Main {
 		point2.affiche();
 		point3.affiche();
 		
-		int tabInt[] = {1,2,3,4,5};
-		float tabFloat[] = {1.2f, 2.3f, 3.4f, 4.5f, 5.6f};
-		double tabDouble[] = {6.7, 7.8, 8.9, 9, 10.1};
+		Integer tabInt[] = {1,2,3,4,5};
+		Float tabFloat[] = {1.2f, 2.3f, 3.4f, 4.5f, 5.6f};
+		Double tabDouble[] = {6.7, 7.8, 8.9, 9.0, 10.1};
 		String tabString[] = {"un", "deux", "trois", "quatre", "cinq"};
-		char tabChar[] = {'6','7','8','9','0'};
+		Character tabChar[] = {'6','7','8','9','0'};
 		
-		System.out.println(tabInt);
-		System.out.println(tabFloat);
-		System.out.println(tabDouble);
-		System.out.println(tabString);
-		System.out.println(tabChar);
+		System.out.println(contenuCase(tabInt));
+		System.out.println(contenuCase(tabFloat));
+		System.out.println(contenuCase(tabDouble));
+		System.out.println(contenuCase(tabString));
+		System.out.println(contenuCase(tabChar));
 	}
 	
 	public static <T>T contenuCase(T tab [])
