@@ -12,7 +12,7 @@ public class Joueur {
 		this.nom = leNom;
 	}
 	
-	public void peutJoueur()
+	public void peutJouer()
 	{
 		//
 	}
