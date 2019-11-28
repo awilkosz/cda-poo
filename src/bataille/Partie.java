@@ -153,11 +153,13 @@ public class Partie {
 			{
 				this.joueur1.getMain().add(this.joueur1.getTapis().get(0));
 				this.joueur1.getMain().add(this.joueur2.getTapis().get(0));
+				System.out.println(this.joueur1.getNom() + " remporte la mise");
 			}
 			else
 			{
 				this.joueur2.getMain().add(this.joueur1.getTapis().get(0));
 				this.joueur2.getMain().add(this.joueur2.getTapis().get(0));
+				System.out.println(this.joueur2.getNom() + " remporte la mise");
 			}
 			this.joueur1.getTapis().clear();
 			this.joueur2.getTapis().clear();
